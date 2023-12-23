@@ -1,0 +1,48 @@
+@import "~@/assets/styles/variables.less";
+@import "~@/assets/styles/mixins.less";
+
+.p_website {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  #flex > .column(center);
+
+  &_container {
+    width: 100%;
+    max-width: 375px;
+    #flex > .column(center);
+
+    .logo {
+      width: 114px;
+      height: 32px;
+      margin-top: 16px;
+    }
+    .title {
+      width: 100%;
+      margin-top: 40px;
+      font-size: 32px;
+      text-align: center;
+      font-weight: @font_weight_strong;
+      color: @content_primary_color;
+    }
+    .content {
+      margin-top: 16px;
+      font-size: 20px;
+      text-align: center;
+      line-height: 1.5;
+      color: @content_primary_color;
+    }
+    .start {
+      width: calc(100% - 48px);
+      height: 56px;
+      border-radius: 16px;
+      font-size: 16px;
+      margin-top: 48px;
+      #button > .primary();
+    }
+    .image {
+      width: 100%;
+      margin-top: 64px;
+    }
+  }
+}

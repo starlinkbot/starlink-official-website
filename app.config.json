@@ -1,0 +1,11 @@
+{
+	"apps":[
+		{
+			"name": "starlink-official-5001",
+			"script": "node",
+			"interpreter": "none",
+			"max_memory_restart": "300M",
+			"args": "express.js"
+		}
+	]
+}
