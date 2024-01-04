@@ -11,7 +11,7 @@ const IndexPage = ({ history }) => {
         <img src={IMAGE.website_logo} alt="" className="logo" />
         <p className="title">Building <br /> the Future of <br /> Edge Data Network, Together</p>
         <p className="content">Share Your Bandwidth, <br /> Grow Your Wallet</p>
-        <Button className="start" onClick={() => { window.open("https://starlinkbot.s3.ap-southeast-1.amazonaws.com/download/starlink0.9.4.apk") }}>Start Now</Button>
+        <Button className="start" onClick={() => { window.open("https://www.starlink.bot/dl/starlink0.9.4.apk") }}>Start Now</Button>
         <img src={IMAGE.website_image} alt="" className="image" />
       </div>
     </div>
