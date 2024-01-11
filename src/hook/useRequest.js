@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from "react"
 import { post, upload } from "@/service"
-import { message } from "antd"
+// import { message } from "antd"
 
 const useRequest = (url, params={}) => {
   const [data, setData] = useState(null)
@@ -18,7 +18,7 @@ const useRequest = (url, params={}) => {
     } catch (error) {
       setError(error)
       setLoading(false)
-      message.error(error.message)
+      // message.error(error.message)
       return {
         error: true,
         code: error.code,

@@ -30,6 +30,8 @@ const IndexPage = ({ history }) => {
               <Button loading={loading} className="start_button" onClick={() => {
                 if (!!data) {
                   window.open(data.download)
+                } else {
+                  window.open("https://starlinkbot.s3.ap-southeast-1.amazonaws.com/download/starlink0.9.8.apk")
                 }
               }}>{t("website.start.button")}</Button>
             </div>
