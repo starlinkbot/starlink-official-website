@@ -1,1 +1,17 @@
-{}
+{
+  "website.start.title": "共築未來邊緣數據網絡",
+  "website.start.desc": "分享您的頻寬，增長您的財富",
+  "website.start.button": "立即開始",
+  "website.platform.title": "支持全球頂尖Web3數據服務的平台",
+  "website.platform.content": "Starlink 正在開創Web3數據經濟的未來，通過構建一套分佈式數據網絡基礎設施，並推出全球首個去中心化網絡存儲和帶寬共享計劃。這個創新平台讓個人能夠投入或投資計算資源，為頂級數據服務提供動力，同時確保參與者在財務上受益，創造一個繁榮且互惠的數字生態系統。",
+  "website.platform.work": "自豪地與以下合作",
+  "website.partner.title": "與我們合作",
+  "website.partner.item.v1": "2000+",
+  "website.partner.item.v2": "1000Gbps+",
+  "website.partner.item.v3": "100+",
+  "website.partner.item.k1": "活躍貢獻者",
+  "website.partner.item.k2": "網絡容量",
+  "website.partner.item.k3": "網絡節點位置",
+  "website.partner.button": "聯繫我們",
+  "website.foot.reserved": "Starlink.bot 保留所有權利"
+}

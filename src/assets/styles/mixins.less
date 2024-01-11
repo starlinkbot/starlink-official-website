@@ -24,31 +24,17 @@
 }
 #button {
   .primary() {
-    background-color: @primary_color;
-    color: @content_inverse_primary_color;
-    font-weight: @font_weight_strong;
+    background-color: @blue;
+    color: @white;
+    font-weight: @font_strong;
     border-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    &:active::before {
-      border-radius: 16px;
-      border-style: none;
-    }
-  }
-  .normal() {
-    background-color: @background_tertiary_color;
-    color: @content_primary_color;
-    font-weight: @font_weight_strong;
-    border-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &:active::before {
-      border-radius: 16px;
-      border-style: none;
+    &:hover {
+      color: @white !important;
+      opacity: 0.8;
     }
   }
 }

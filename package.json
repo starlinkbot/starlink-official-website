@@ -4,11 +4,10 @@
   "private": true,
   "description": "",
   "dependencies": {
-    "antd-mobile": "^5.33.0",
+    "antd": "^5.12.5",
     "axios": "^0.21.4",
     "bnc-notify": "^1.9.1",
     "cra-template": "1.1.2",
-    "echarts": "^5.4.2",
     "env-cmd": "^10.1.0",
     "http-proxy-middleware": "^2.0.1",
     "i18next": "^20.6.1",
@@ -17,14 +16,11 @@
     "less-loader": "^5.0.0",
     "moment": "^2.29.1",
     "normalize.css": "^8.0.1",
-    "qrcode.react": "^3.1.0",
     "react": "^17.0.2",
-    "react-copy-to-clipboard": "^5.0.4",
     "react-dom": "^17.0.2",
     "react-i18next": "^11.12.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.3",
-    "react-transition-group": "^4.4.5"
+    "react-scripts": "^4.0.3"
   },
   "scripts": {
     "start": "PORT=1025 env-cmd -f .env.development react-app-rewired start",

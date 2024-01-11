@@ -34,13 +34,7 @@ instance.interceptors.response.use(
     }
   }, 
   error => {
-    if (error.message.includes('timeout')) {
-      return Promise.reject('Network Timeout')
-    } else if (error.message.includes('Network Error')) {
-      return Promise.reject('Network Error')
-    } else {
-      return Promise.reject('Network error, please try later!')
-    }
+    return Promise.reject(error)
   }
 )
 // 请求方法

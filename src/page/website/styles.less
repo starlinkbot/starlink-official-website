@@ -2,47 +2,302 @@
 @import "~@/assets/styles/mixins.less";
 
 .p_website {
+  #flex > .column(center);
   width: 100%;
   min-height: 100vh;
   box-sizing: border-box;
-  #flex > .column(center);
 
-  &_container {
+  &_white {
+    background-color: @white;
+  }
+  &_gray {
+    background-color: @gray;
+  }
+  &_black {
+    background-color: @black;
+  }
+  &_navbar {
     width: 100%;
-    max-width: 375px;
-    #flex > .column(center);
-
-    .logo {
-      width: 114px;
-      height: 32px;
-      margin-top: 16px;
-    }
-    .title {
-      width: 100%;
-      margin-top: 40px;
-      font-size: 32px;
-      text-align: center;
-      font-weight: @font_weight_strong;
-      color: @content_primary_color;
-    }
-    .content {
-      margin-top: 16px;
-      font-size: 20px;
-      text-align: center;
-      line-height: 1.5;
-      color: @content_primary_color;
-    }
-    .start {
-      width: calc(100% - 48px);
+    
+    img {
       height: 56px;
-      border-radius: 16px;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      @media screen and (max-width: @app_screen) {
+        height: 36px;
+        margin: 16px 0;
+      }
+    }
+  }
+  &_start {
+    #flex > .row();
+    #flex > .between();
+    width: 100%;
+    gap: 40px;
+    padding-bottom: 120px;
+    @media screen and (max-width: @app_screen) {
+      flex-direction: column-reverse;
+      padding-bottom: 40px;
+    }
+
+    &_content {
+      #flex > .column();
+      flex: 1;
+      @media screen and (max-width: @app_screen) {
+        align-items: center;
+      }
+
+      .start_title {
+        font-size: 56px;
+        font-weight: @font_strong;
+        color: @black;
+        white-space: pre-wrap;
+        @media screen and (max-width: 1385px) {
+          font-size: 50px;
+        }
+        @media screen and (max-width: 1260px) {
+          font-size: 45px;
+        }
+        @media screen and (max-width: 1120px) {
+          font-size: 40px;
+        }
+        @media screen and (max-width: @app_screen) {
+          font-size: 30px;
+          text-align: center;
+        }
+      }
+      .start_desc {
+        font-size: 24px;
+        color: @black;
+        margin-top: 32px;
+        white-space: pre-wrap;
+        @media screen and (max-width: 1385px) {
+          font-size: 22px;
+        }
+        @media screen and (max-width: 1260px) {
+          font-size: 20px;
+        }
+        @media screen and (max-width: 1120px) {
+          font-size: 18px;
+        }
+        @media screen and (max-width: @app_screen) {
+          font-size: 18px;
+          margin-top: 20px;
+          text-align: center;
+        }
+      }
+      .start_button {
+        #button > .primary();
+        font-size: 16px;
+        margin-top: 48px;
+        height: 56px;
+        padding: 0 40px;
+        border-radius: 16px;
+        @media screen and (max-width: @app_screen) {
+          margin-top: 20px;
+          font-size: 14px;
+          height: 44px;
+          border-radius: 8px;
+        }
+      }
+    }
+    img {
+      width: 50%;
+      @media screen and (max-width: @app_screen) {
+        width: 100vw;
+      }
+    }
+  }
+  &_platform {
+    #flex > .column(center);
+    padding: 160px 0;
+    @media screen and (max-width: @app_screen) {
+      padding: 80px 0;
+    }
+
+    .platform_title {
+      font-size: 40px;
+      font-weight: @font_strong;
+      color: @black;
+      width: 100%;
+      max-width: 650px;
+      text-align: center;
+      @media screen and (max-width: @app_screen) {
+        font-size: 22px;
+      }
+    }
+    .platform_content {
+      margin-top: 32px;
+      font-size: 16px;
+      color: @black;
+      line-height: 1.5;
+      width: 100%;
+      max-width: 630px;
+      text-align: center;
+      @media screen and (max-width: @app_screen) {
+        font-size: 14px;
+        margin-top: 20px;
+      }
+    }
+    .platform_desc {
+      #flex > .column(center);
+      margin: 16px 0;
+      @media screen and (max-width: @app_screen) {
+        margin: 12px 0;
+      }
+
+      &_line {
+        width: 1px;
+        height: 12px;
+        background-color: @gray_2;
+      }
+      p {
+        margin: 8px 0;
+        font-size: 12px;
+        color: @gray_1;
+        @media screen and (max-width: @app_screen) {
+          font-size: 10px;
+        }
+      }
+    }
+    .platform_images {
+      #flex > .row();
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+
+      img {
+        height: 80px;
+        margin: 0 24px;
+        @media screen and (max-width: @app_screen) {
+          height: 60px;
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+  &_partner {
+    #flex > .column(center);
+    padding: 160px 0;
+    @media screen and (max-width: @app_screen) {
+      padding: 80px 0;
+    }
+
+    .partner_title {
+      font-size: 40px;
+      color: @white;
+      font-weight: @font_strong;
+      @media screen and (max-width: @app_screen) {
+        font-size: 22px;
+      }
+    }
+    .partner_list {
+      #flex > .row();
+      gap: 24px;
+      margin-top: 48px;
+      @media screen and (max-width: @app_screen) {
+        #flex > .column();
+        width: 100%;
+        margin-top: 30px;
+      }
+
+      .partner_item {
+        #flex > .column(center);
+        padding: 40px;
+        border-radius: 24px;
+        background-color: @gray_3;
+        @media screen and (max-width: @app_screen) {
+          width: 100%;
+          padding: 20px;
+          box-sizing: border-box;
+        }
+
+        img {
+          width: 64px;
+          height: 64px;
+          @media screen and (max-width: @app_screen) {
+            width: 40px;
+            height: 40px;
+          }
+        }
+        &_value {
+          margin-top: 24px;
+          color: @white;
+          font-weight: @font_strong;
+          font-size: 32px;
+          width: 264px;
+          text-align: center;
+          @media screen and (max-width: 1150px) {
+            width: 250px;
+          }
+          @media screen and (max-width: @app_screen) {
+            font-size: 20px;
+            width: auto;
+          }
+        }
+        &_key {
+          margin-top: 8px;
+          color: @white;
+          font-size: 16px;
+          @media screen and (max-width: @app_screen) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .partner_map {
+      width: 100%;
+      margin-top: 100px;
+      @media screen and (max-width: @app_screen) {
+        margin-top: 50px;
+      }
+    }
+    .partner_button {
+      #button > .primary();
       font-size: 16px;
       margin-top: 48px;
-      #button > .primary();
+      height: 56px;
+      padding: 0 40px;
+      border-radius: 16px;
+      @media screen and (max-width: @app_screen) {
+        margin-top: 24px;
+        font-size: 14px;
+        height: 44px;
+        border-radius: 8px;
+      }
     }
-    .image {
-      width: 100%;
-      margin-top: 64px;
+  }
+  &_foot {
+    #flex > .row(center);
+    padding: 40px 0;
+    gap: 16px;
+    @media screen and (max-width: @app_screen) {
+      #flex > .column(center);
+      padding: 20px 0;
+    }
+
+    p {
+      flex: 1;
+      font-size: 16px;
+      color: @gray_1;
+      line-height: 1.5;
+      @media screen and (max-width: @app_screen) {
+        font-size: 12px;
+      }
+    }
+    .foot_menu {
+      #flex > .row();
+      gap: 16px;
+
+      img {
+        width: 64px;
+        height: 64px;
+        cursor: pointer;
+        @media screen and (max-width: @app_screen) {
+          width: 32px;
+          height: 32px;
+        }
+      }
     }
   }
 }

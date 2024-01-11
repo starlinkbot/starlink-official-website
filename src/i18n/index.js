@@ -5,6 +5,9 @@ import zhCnTrans from "./locales/zh-cn.json"
 import inIDTrans from "./locales/in-id.json"
 import { initReactI18next } from "react-i18next"
 
+const language = navigator.language || navigator.userLanguage
+const lng = !!language && language.startsWith("zh") ? "zh" : "en"
+
 i18n.use(LanguageDetector)
 .use(initReactI18next)
 .init({
@@ -19,7 +22,7 @@ i18n.use(LanguageDetector)
       translation: inIDTrans,
     }
   },
-  lng: "en",
+  lng: lng,
   fallbackLng: "en",
   debug: false,
   interpolation: {

@@ -1,5 +1,5 @@
-import MWatch from "./watch"
+import MSession from "./session"
 
-export { 
-  MWatch
+export {
+  MSession
 }

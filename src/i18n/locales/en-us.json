@@ -1,1 +1,17 @@
-{}
+{
+  "website.start.title": "Building \nthe Future of \nEdge Data Network, Together",
+  "website.start.desc": "Share Your Bandwidth, \nGrow Your Wallet",
+  "website.start.button": "Start Now",
+  "website.platform.title": "The Platform Behind the World's Top Web3 Data Services",
+  "website.platform.content": "Starlink is pioneering the future of Web3 data economy by building a suite of distributed data network infrastructure and launching the world's first decentralized network storage and bandwidth sharing program. This innovative platform allows individuals to contribute or invest in computing resources, powering top-tier data services while ensuring participants benefit financially, creating a thriving, mutually advantageous digital ecosystem.",
+  "website.platform.work": "Proudly Working With",
+  "website.partner.title": "Partner With Us",
+  "website.partner.item.v1": "2000+",
+  "website.partner.item.v2": "1000Gbps+",
+  "website.partner.item.v3": "100+",
+  "website.partner.item.k1": "Active Contributors",
+  "website.partner.item.k2": "Network Capacity",
+  "website.partner.item.k3": "Network Edge Locations",
+  "website.partner.button": "Contact Us",
+  "website.foot.reserved": "Starlink.bot All Rights Reserved"
+}
