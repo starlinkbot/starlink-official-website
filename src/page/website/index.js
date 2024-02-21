@@ -27,7 +27,7 @@ const IndexPage = ({ history }) => {
             <div className="p_website_start_content">
               <p className="start_title">{t("website.start.title")}</p>
               <p className="start_desc">{t("website.start.desc")}</p>
-              <Button loading={loading} className="start_button" onClick={() => {
+              <Button loading={loading} className="start_button" style={{display: "none"}} onClick={() => {
                 if (!!data) {
                   window.open(data.download)
                 } else {
